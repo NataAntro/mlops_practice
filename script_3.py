@@ -8,7 +8,7 @@ df = pd.read_csv('datasets/data.csv')
 
 # Загружаем данные из файла 'datasets/data.csv' 
 
-one_hot_encoder = OneHotEncoder(sparse=False)
+one_hot_encoder = OneHotEncoder(sparse_output=False)
 # Создаем экземпляр класса OneHotEncoder 
 
 sex_ohe = one_hot_encoder.fit_transform(df[['Sex']])
